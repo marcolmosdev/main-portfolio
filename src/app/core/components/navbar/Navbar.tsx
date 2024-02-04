@@ -2,8 +2,16 @@ import styles from './Navbar.module.scss'
 import {gsap} from "gsap";
 import {useGSAP} from "@gsap/react";
 import {HashLink} from 'react-router-hash-link';
+import Hamburger from "./components/hamburger/Hamburger.tsx";
+import {useState} from "react";
 
 function Navbar() {
+
+  const [hamburgerState, setHamburgerState] = useState(false);
+
+  const toggleHamburger = () => {
+    setHamburgerState(!hamburgerState);
+  };
 
   useGSAP(() => {
     const navTl = gsap.timeline();
@@ -46,6 +54,7 @@ function Navbar() {
           <HashLink to="#projects" className={styles['navbar__navbar-menu__link']}>Projects</HashLink>
           <HashLink to="#contact" className={styles['navbar__navbar-menu__link']}>Contact</HashLink>
         </nav>
+        <Hamburger onClick={toggleHamburger} hamburgerState={hamburgerState} />
       </div>
     </>
   )
