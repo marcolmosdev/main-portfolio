@@ -13,8 +13,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background: radial-gradient(at top right, rgba(26, 11, 57, 1) 0%, rgba(16, 16, 16, 1) 80%);
-  height: 100vh;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  scroll-behavior: smooth;
 }
 
 body {

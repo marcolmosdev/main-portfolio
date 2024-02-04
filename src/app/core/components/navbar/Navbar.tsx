@@ -1,6 +1,7 @@
 import styles from './Navbar.module.scss'
 import {gsap} from "gsap";
 import {useGSAP} from "@gsap/react";
+import {HashLink} from 'react-router-hash-link';
 
 function Navbar() {
 
@@ -34,17 +35,16 @@ function Navbar() {
   return (
     <>
       <div className={styles['navbar']}>
-        <div className={styles['navbar__logo-container']}>
+        <HashLink to="#home" className={styles['navbar__logo-container']}>
           <img className={styles['navbar__logo-container__logo']} src="/img/logo-third-part.png" alt=""/>
           <img className={styles['navbar__logo-container__logo']} src="/img/logo-third-part.png" alt=""/>
           <img className={styles['navbar__logo-container__logo']} src="/img/logo-third-part.png" alt=""/>
-        </div>
+        </HashLink>
         <nav className={styles['navbar__navbar-menu']}>
-          <span className={styles['navbar__navbar-menu__link']}>Home</span>
-          <span className={styles['navbar__navbar-menu__link']}>About</span>
-          <span className={styles['navbar__navbar-menu__link']}>Services</span>
-          <span className={styles['navbar__navbar-menu__link']}>Projects</span>
-          <span className={styles['navbar__navbar-menu__link']}>Contact</span>
+          <HashLink to="#about" className={styles['navbar__navbar-menu__link']}>About</HashLink>
+          <HashLink to="#services" className={styles['navbar__navbar-menu__link']}>Services</HashLink>
+          <HashLink to="#projects" className={styles['navbar__navbar-menu__link']}>Projects</HashLink>
+          <HashLink to="#contact" className={styles['navbar__navbar-menu__link']}>Contact</HashLink>
         </nav>
       </div>
     </>
