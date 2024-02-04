@@ -11,6 +11,7 @@
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
+    backdrop-filter: blur(10px);
 
     &__logo-container {
         display: flex;
