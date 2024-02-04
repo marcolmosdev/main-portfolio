@@ -35,9 +35,9 @@ function Navbar() {
     <>
       <div className={styles['navbar']}>
         <div className={styles['navbar__logo-container']}>
-          <img className={styles['navbar__logo-container__logo']} src="/src/assets/img/logo-third-part.png" alt=""/>
-          <img className={styles['navbar__logo-container__logo']} src="/src/assets/img/logo-third-part.png" alt=""/>
-          <img className={styles['navbar__logo-container__logo']} src="/src/assets/img/logo-third-part.png" alt=""/>
+          <img className={styles['navbar__logo-container__logo']} src="/img/logo-third-part.png" alt=""/>
+          <img className={styles['navbar__logo-container__logo']} src="/img/logo-third-part.png" alt=""/>
+          <img className={styles['navbar__logo-container__logo']} src="/img/logo-third-part.png" alt=""/>
         </div>
         <nav className={styles['navbar__navbar-menu']}>
           <span className={styles['navbar__navbar-menu__link']}>Home</span>
