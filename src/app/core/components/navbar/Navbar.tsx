@@ -54,7 +54,9 @@ function Navbar() {
           <HashLink to="#projects" className={styles['navbar__navbar-menu__link']}>Projects</HashLink>
           <HashLink to="#contact" className={styles['navbar__navbar-menu__link']}>Contact</HashLink>
         </nav>
-        <Hamburger onClick={toggleHamburger} hamburgerState={hamburgerState} />
+        <div className={styles['navbar__hamburger-container']}>
+          <Hamburger onClick={toggleHamburger} hamburgerState={hamburgerState} />
+        </div>
       </div>
     </>
   )

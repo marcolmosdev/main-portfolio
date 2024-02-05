@@ -39,6 +39,10 @@
         &__navbar-menu {
             display: none;
         }
+
+        &__hamburger-container {
+            display: block;
+        }
     }
 
     @media (min-width: 501px) {
@@ -65,6 +69,10 @@
                     transition: 0.3s;
                 }
             }
+        }
+
+        &__hamburger-container {
+            display: none;
         }
     }
 }
