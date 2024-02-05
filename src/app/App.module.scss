@@ -11,5 +11,29 @@
     justify-content: center;
     align-items: center;
     color: white;
+
+    &__title {
+      background: linear-gradient(160deg, rgb(225, 225, 225) 40%, rgb(126, 126, 126) 100%);
+      -webkit-background-clip: text;
+      color: transparent;
+      width: 75%;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 500px) {
+    &__section {
+      &__title {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  @media (min-width: 501px) {
+    &__section {
+      &__title {
+        font-size: 2.6rem;
+      }
+    }
   }
 }
