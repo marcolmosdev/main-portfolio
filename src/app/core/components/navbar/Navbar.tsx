@@ -22,7 +22,10 @@ function Navbar() {
         duration: 0.4,
         delay: 0.5
       })
-      .from("." + styles['navbar__navbar-menu'], {opacity: 0, delay: -0.3});
+      .from("." + styles['navbar__navbar-menu'], {
+        opacity: 0,
+        delay: 0.6
+      });
   }, []);
 
   return (
