@@ -1,0 +1,14 @@
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 16px;
+
+  &__part {
+    height: 19px;
+
+    &:nth-child(2) {
+      margin: 1px;
+    }
+  }
+}
