@@ -1,9 +1,9 @@
 import styles from './Navbar.module.scss'
-import {gsap} from "gsap";
-import {useGSAP} from "@gsap/react";
-import {HashLink} from 'react-router-hash-link';
-import Hamburger from "./components/hamburger/Hamburger.tsx";
-import {useState} from "react";
+import { gsap } from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { HashLink } from 'react-router-hash-link';
+import Hamburger from './components/hamburger/Hamburger.tsx';
+import { useState } from 'react';
 import Logo from './components/logo/Logo.tsx';
 
 function Navbar() {
@@ -16,13 +16,13 @@ function Navbar() {
 
   useGSAP(() => {
     gsap.timeline()
-      .from("." + styles['navbar'], {
+      .from('.' + styles['navbar'], {
         y: -10,
         opacity: 0,
         duration: 0.4,
         delay: 0.5
       })
-      .from("." + styles['navbar__navbar-menu'], {
+      .from('.' + styles['navbar__navbar-menu'], {
         opacity: 0,
         delay: 0.6
       });
@@ -32,7 +32,7 @@ function Navbar() {
     <>
       <div className={styles['navbar']}>
         <HashLink to="#home" className={styles['navbar__logo-container']}>
-          <Logo />
+          <Logo/>
         </HashLink>
         <nav className={styles['navbar__navbar-menu']}>
           <HashLink to="#about" className={styles['navbar__navbar-menu__link']}>About</HashLink>
@@ -41,7 +41,7 @@ function Navbar() {
           <HashLink to="#contact" className={styles['navbar__navbar-menu__link']}>Contact</HashLink>
         </nav>
         <div className={styles['navbar__hamburger-container']}>
-          <Hamburger onClick={toggleHamburger} hamburgerState={hamburgerState} />
+          <Hamburger onClick={toggleHamburger} hamburgerState={hamburgerState}/>
         </div>
       </div>
     </>

@@ -1,14 +1,14 @@
-import {createBrowserRouter, Navigate} from "react-router-dom";
-import App from "./App.tsx";
+import { createBrowserRouter, Navigate } from 'react-router-dom';
+import App from './App.tsx';
 
 const AppRouter = createBrowserRouter([
   {
-    path: "/",
-    element: <App />
+    path: '/',
+    element: <App/>
   },
   {
     path: '*',
-    element: <Navigate to="/" />,
+    element: <Navigate to="/"/>,
   },
 ]);
 

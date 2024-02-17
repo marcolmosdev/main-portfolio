@@ -1,12 +1,12 @@
 import styles from './App.module.scss'
-import Navbar from "./core/components/navbar/Navbar.tsx";
+import Navbar from './core/components/navbar/Navbar.tsx';
 import { useGSAP } from '@gsap/react';
 import { gsap } from 'gsap';
 
 function App() {
 
   useGSAP(() => {
-    gsap.from("." + styles['sections__section__title'], {
+    gsap.from('.' + styles['sections__section__title'], {
       opacity: 0,
       y: 10,
       duration: 0.5,
