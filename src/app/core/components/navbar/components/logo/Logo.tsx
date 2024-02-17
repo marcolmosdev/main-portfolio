@@ -1,13 +1,17 @@
 import styles from './Logo.module.scss';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
+
 export default function Logo() {
 
   useGSAP(() => {
-    const logoImages = document.querySelectorAll("." + styles['logo__part']);
+    const logoImages = document.querySelectorAll('.' + styles['logo__part']);
     if (logoImages && logoImages.length > 0) {
       const logoTl = gsap.timeline();
-      logoImages.forEach((logo, index) => {
+      logoImages.forEach((
+        logo,
+        index
+      ) => {
         logoTl.from(logo, {
           opacity: 0,
           y: -4,
@@ -21,9 +25,7 @@ export default function Logo() {
   return (
     <>
       <div className={styles['logo']}>
-        <img className={styles['logo__part']} src="/img/logo-third-part.png" alt=""/>
-        <img className={styles['logo__part']} src="/img/logo-third-part.png" alt=""/>
-        <img className={styles['logo__part']} src="/img/logo-third-part.png" alt=""/>
+        <img src="/img/logo.png" alt=""/>
       </div>
     </>
   )
